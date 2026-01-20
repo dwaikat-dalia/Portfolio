@@ -4,7 +4,7 @@ let projects=[
     {
          title: "Portfolio",
     description: "Built with HTML, CSS, and JavaScript",
-    demo: "#",
+    demo: "https://portfolio-dalia-mansour.netlify.app/",
     github: "https://github.com/dwaikat-dalia/Portfolio",
     image: "imgs/portfolioproject.png",
     year:"2025"
