@@ -5,7 +5,7 @@ let projects=[
          title: "Portfolio",
     description: "Built with HTML, CSS, and JavaScript",
     demo: "#",
-    github: "#",
+    github: "https://github.com/dwaikat-dalia/Portfolio",
     image: "imgs/portfolioproject.png",
     year:"2025"
     },
@@ -83,8 +83,8 @@ const card = `
               
                 <p class ="para-card">${Element.description}</p>
                 <div class="button-card">
-                    <a href="${Element.demo}">Website</a>
-                    <a href="${Element.github}">GitHub</a>
+                    <a href="${Element.demo}" target="_blank" rel="noopener noreferrer">Website</a>
+                    <a href="${Element.github}" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
                  <h2>${Element.year}</h2>
 
@@ -111,38 +111,105 @@ let buttoncard = crd.querySelector(".button-card");
         }
 
 });
-/** coresal **/
+
+/** carousel **/
 
 let allCards = document.querySelectorAll(".cardd");
 let leftArrow = document.querySelector(".left");
+let rightArrow = document.querySelector(".right");
+let current = 0;
+
+   function getVisibleCount() {
+  return window.innerWidth <= 900
+    ? 1
+    : window.innerWidth <= 1200
+    ? 2
+    : 3;
+}
+
+
+function move(index) {
+    let visibleCount = getVisibleCount();
+    
+    allCards.forEach((el) => el.classList.remove("active"));
+
+    for (let i = 0; i < visibleCount; i++) {
+        allCards[(index + i) % allCards.length].classList.add("active");
+    }
+}
+
+move(current);
+
+leftArrow.addEventListener("click", () => {
+    let visibleCount = getVisibleCount();
+    current = ((current - visibleCount) + allCards.length) % allCards.length;
+    move(current);
+});
+
+rightArrow.addEventListener("click", () => {
+    let visibleCount = getVisibleCount();
+    current = (current + visibleCount) % allCards.length;
+    move(current);
+});
+
+window.addEventListener("resize", () => {
+    move(current);
+});
+
+/*
+let allCards = document.querySelectorAll(".cardd");
+let leftArrow = document.querySelector(".left");
 let RightArrow = document.querySelector(".right");
+
+if (window.innerWidth <= 600) {
+    allCards[0].classList.add("active");
+
+}else{
 allCards[0].classList.add("active");
 
 allCards[1].classList.add("active");
 allCards[2].classList.add("active");
-
+}
 let current=0;
 function move(index){
-    allCards.forEach((element)=>{element.classList.remove("active");});
+       if (window.innerWidth <= 600) { // <= 600px يعني هاتف
+   allCards.forEach((element)=>{element.classList.remove("active");});
+    allCards[index].classList.add("active");
+    
+}else{
+ allCards.forEach((element)=>{element.classList.remove("active");});
     allCards[index].classList.add("active");
     allCards[(index+1)%allCards.length].classList.add("active");
     allCards[(index+2)%allCards.length].classList.add("active");
-     
+ 
+}
      
 }
 
 leftArrow.addEventListener("click",()=>{
-   
-current = ((current-3)+ allCards.length )%allCards.length;
-move(current);
+     if (window.innerWidth <= 600) {
+        current = ((current-1)+ allCards.length )%allCards.length;
+
+     }else{
+        current = ((current-3)+ allCards.length )%allCards.length;
+
+     }move(current);
+
 
 
 });
 RightArrow.addEventListener("click",()=>{
-current = ((current+3) % allCards.length); 
+     if (window.innerWidth <= 600) {
+current = ((current+1) % allCards.length);
+     }else{
+current = ((current+3) % allCards.length);
+     }
+
+
+ 
 move(current);
 
-});
+});*/
 
 /***************certifcates */
 

@@ -669,3 +669,389 @@ footer{
     font-weight: 200;
 
 }
+@media (max-width: 900px) {
+    /*nav section*/
+    
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+   display: flex;
+    background-color: var(--primary_color);
+    justify-content: space-evenly;
+       
+}
+nav p{
+    
+    color:var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: var(--primary-font);
+
+ 
+}
+nav p span{
+    color: var(--gold);
+     font-size: 35px;
+}
+
+nav ul{
+    display: none;
+    color: var(--white);
+   
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 17px;
+    gap: 20px;
+    
+
+}
+nav ul a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+nav ul a:hover{
+    color: var(--gold);
+}
+    /*info section */
+ #info{
+    height: 150vh;
+    background: url("imgs/background31.png") no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+
+}
+.image-1{
+   margin:0 auto;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.information h1{
+    font-size: 20px;
+    text-align: center;
+ }
+.information h2{
+    font-size: 50px;
+  font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.information p{
+    font-size: 16px;
+     text-align: center;
+}
+.information p span{
+    font-size: 13px;
+}
+
+/*Section skills**/
+
+.skills-group{
+    
+      grid-template-columns: 1fr; 
+    grid-template-rows: auto;   
+    gap: 10px;
+    padding: 15px;
+}
+.headtext{
+    text-align: center;
+    font-weight: 700;
+    padding:10px 10px 10px 10px;
+
+}
+.skill-element{
+   padding:5px;   
+}
+
+/**projects***/
+
+
+
+
+
+#projects{
+    padding-bottom: 30px;
+    padding-left: 0px;
+     background-color: #e6e6e6;
+}
+
+
+.cardd{
+    margin-bottom: 20px;
+}
+.cardd .content p
+{
+color: gray;
+padding-bottom: 10px;
+}
+.cardd h2{
+    color: var(--gold);
+   
+    font-weight: 900;
+    padding-left: 10px;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+#containerProjects{
+  padding-bottom: 20px;
+    padding: 0px;
+    background-color: #e6e6e667;
+    overflow: hidden;
+    
+    display:flex ;
+    
+    justify-content: space-evenly;
+}
+.buttonsCroseal{
+    text-align: center;
+    padding: 10px;
+}
+.buttonsCroseal button{
+    background-color: transparent;
+    border:1px solid palevioletred;
+    color:palevioletred;
+    border-radius: 50%;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 30px;
+}
+
+.buttonsCroseal button:hover{
+    background-color: var(--warm);
+    box-shadow: 3px 3px 3px gray;
+    color: var(--white);
+   
+}
+.active{
+    display: inline-block;
+}
+
+
+/*education section**/
+
+
+.imageEducation{
+width: 340px;
+height: 500px;
+
+box-shadow: 5px 5px 10px var(--pink);
+   border:solid 3px  var(--pink);
+    border-radius: 50% 50%;
+    overflow: hidden;
+}
+.imageEducation img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+   
+}
+#education{
+    display: flex;
+   flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+
+/*certificate**/
+
+.certif_card{ background-color: white;
+height: 150px;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+#Certificates{
+   height: 220vh;
+   
+    gap: 1px;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-evenly;
+    padding: 40px;
+
+}
+.certif_card:hover div .details{
+   right: -100px;
+   bottom: 1px;
+    padding: 2px;
+   
+
+}
+
+.detailsOpen button{
+   position: absolute;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+    padding: 2px;
+   
+}
+.detailsOpen{
+  
+   
+    line-height: 20px;
+  
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 200px;
+    margin-left: auto;
+   
+    
+}
+ 
+/****Gallery*****/
+#Gallery{
+    height:100vh;
+    padding: 0px;
+    background-color: var(--primary_color);
+}
+.galleryImages{
+ display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ width:80%;
+  height: 80vh; 
+  overflow: hidden;
+  margin-left: 10%;
+  position: relative;
+ 
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px gray;
+}
+.galleryImages img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+#connect{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(220, 220, 220, 0.356);
+   align-items: center;
+
+}
+#connect h3 {
+    font-size: 40px;
+
+}
+#connect div ul li a{
+    color: gray;
+}
+#connect div ul li {
+    color: gray;
+    list-style: none;
+   line-height: 35px;
+}
+#connect div ul li:hover a{
+    color: goldenrod;
+}
+#connect div ul li i{
+    color: black;
+    font-size: 20px;
+    padding-right: 10px;
+}
+#connect div {
+    padding-left: 30px;
+    border-left: 1px solid black;
+}
+
+/****/
+footer{
+    background-color: var(--primary_color);
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    font-weight: 200;
+
+}
+}
+
+@media (max-width: 1220px) and (min-width: 650px) {
+  
+
+/*certificate**/
+
+.certif_card{ background-color: white;
+height: 150px;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+#Certificates{
+   height: 140vh;
+   
+    gap: 1px;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    padding: 40px;
+
+}
+
+
+
+.certif_card:hover div .details{
+   right: -100px;
+   bottom: 1px;
+    padding: 2px;
+   
+
+}
+
+.detailsOpen button{
+   position: absolute;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+    padding: 2px;
+   
+}
+.detailsOpen{
+  
+   
+    line-height: 20px;
+  
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 200px;
+    margin-left: auto;
+   
+    
+}
+
+}
