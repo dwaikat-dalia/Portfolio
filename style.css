@@ -887,7 +887,7 @@ height: 150px;
 
 
 #Certificates{
-   height: 220vh;
+   height: 235vh;
    
     gap: 1px;
     grid-template-columns: repeat(1,1fr);
