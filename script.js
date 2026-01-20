@@ -4,7 +4,7 @@ let projects=[
     {
          title: "Portfolio",
     description: "Built with HTML, CSS, and JavaScript",
-    demo: "https://portfolio-dalia-mansour.netlify.app/",
+    demo: "https://dwaikat-dalia.github.io/Portfolio/",
     github: "https://github.com/dwaikat-dalia/Portfolio",
     image: "imgs/portfolioproject.png",
     year:"2025"
@@ -12,7 +12,7 @@ let projects=[
      ,{
          title: "React Page",
     description: "Built with Jsx and React",
-    demo: "https://iridescent-cobbler-29a5d4.netlify.app/",
+    demo: "https://dwaikat-dalia.github.io/ReactProfilePage/",
     github: "https://dwaikat-dalia.github.io/ReactProfilePage/",
     image: "imgs/reactWeb.png",
     year:"2025"
@@ -20,7 +20,7 @@ let projects=[
     ,{
          title: "E-commerce Flower",
     description: "Built with HTML, CSS and Media Query",
-    demo: "https://flowerwebsitestore.netlify.app/",
+    demo: "https://dwaikat-dalia.github.io/Website-Flower-store-/",
     github: "https://github.com/dwaikat-dalia/Website-Flower-store-",
     image: "imgs/flowers.png",
     year:"2025"
@@ -28,7 +28,7 @@ let projects=[
      {
          title: "To do List",
     description: "Built with HTML, CSS and javascript",
-    demo: "https://cheery-duckanoo-682969.netlify.app/",
+    demo: "https://dwaikat-dalia.github.io/toDoList/",
     github: "https://github.com/dwaikat-dalia/toDoList",
     image: "imgs/todolist2.png",
     year:"2025"
@@ -36,7 +36,7 @@ let projects=[
      {
          title: "Engage, Architect house",
     description: "Built with HTML, CSS and Media Query",
-    demo: "https://architecturehousewebpage.netlify.app/",
+    demo: "https://dwaikat-dalia.github.io/engage_/",
     github: "https://github.com/dwaikat-dalia/engage_",
     image: "imgs/house.png",
     year:"2022"
@@ -45,14 +45,14 @@ let projects=[
      {
          title: "Resturant",
     description: "Built with HTML, CSS and Media Query",
-    demo: "https://superlative-cocada-2526d4.netlify.app/",
+    demo: "https://dwaikat-dalia.github.io/resturent/",
     github: "https://github.com/dwaikat-dalia/resturent",
     image: "imgs/rest.png",
     year:"2022"
     },  {
          title: "Youtube",
     description: "Built with HTML, CSS, and Bootstrap",
-    demo: "https://stately-sundae-e61f80.netlify.app/",
+    demo: "https://dwaikat-dalia.github.io/YouTube-Clone/",
     github: "https://github.com/dwaikat-dalia/YouTube-Clone",
     image: "imgs/youtubepage2.png",
     year:"2022"
@@ -60,7 +60,7 @@ let projects=[
     ,{
          title: "Osaka",
     description: "Built with HTML, CSS , Bootstrap and Media Query",
-    demo: "https://strong-salmiakki-ed1a62.netlify.app/#home",
+    demo: "https://dwaikat-dalia.github.io/OsakaPage/",
     github: "https://github.com/dwaikat-dalia/OsakaPage",
     image: "imgs/osaka5.png",
     year:"2022"
