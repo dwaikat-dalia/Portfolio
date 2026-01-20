@@ -927,7 +927,7 @@ height: 170px;
  
 /****Gallery*****/
 #Gallery{
-    height:100vh;
+   height: fit-content;
     padding: 0px;
     background-color: var(--primary_color);
 }
@@ -952,7 +952,7 @@ height: 170px;
 
 }
 #connect{
-    height: 100vh;
+   height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
