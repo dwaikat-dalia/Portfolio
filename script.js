@@ -13,7 +13,7 @@ let projects=[
          title: "React Page",
     description: "Built with Jsx and React",
     demo: "https://iridescent-cobbler-29a5d4.netlify.app/",
-    github: "https://github.com/dwaikat-dalia/ReactProfilePage",
+    github: "https://dwaikat-dalia.github.io/ReactProfilePage/",
     image: "imgs/reactWeb.png",
     year:"2025"
     }
