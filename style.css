@@ -876,7 +876,7 @@ box-shadow: 5px 5px 10px var(--pink);
 /*certificate**/
 
 .certif_card{ background-color: white;
-height: 150px;
+height: 170px;
  display: flex;
   flex-direction: column;
   align-items: center;
